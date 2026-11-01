@@ -1,0 +1,198 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.article_wrapper {
+    padding: 40px 0;
+}
+
+.text_section {
+    margin: 0 auto 20px;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.text,
+.list,
+.quote {
+    font-family: 'Georgia', sans-serif;
+    color: #333;
+    line-height: 1.5;
+    font-size: 20px;
+}
+
+.main_title,
+.paragraph_title,
+.list_title {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.35;
+}
+
+.main_title {
+    font-size: 46px;
+    margin: 0 0 24px;
+    font-weight: normal;
+}
+
+.paragraph_title {
+    font-size: 32px;
+    margin: 0 0 18px;
+    font-weight: normal;
+}
+
+.list_title {
+    font-size: 24px;
+    color: #6a6a6a;
+    margin: 0 0 10px;
+    font-weight: bold;
+}
+
+.text {
+    margin: 0 0 10px;
+}
+
+.list {
+    padding-left: 20px;
+}
+
+.list_item {
+    margin-bottom: 10px;
+}
+
+.quote {
+    margin: 20px 0;
+    padding: 20px 40px;
+    font-style: italic;
+    border-top: 1px solid #6a6a6a;
+    border-bottom: 1px solid #6a6a6a;
+}
+
+.article_photo {
+    margin-bottom: 20px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.link {
+    color: #1397ce;
+}
+
+.link:hover {
+    color: #0c749f;
+}
+
+.burger_menu {
+    display: none;
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 100;
+    text-align: center;
+    padding-top: 11px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.burger_menu span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    border-radius: 2px;
+    margin: 0 auto 4px;
+}
+
+.burger_menu span:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 1024px) {
+    .main_title {
+        font-size: 38px;
+    }
+    .paragraph_title {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    .article_wrapper {
+        padding: 20px 0;
+    }
+    .main_title {
+        font-size: 32px;
+    }
+    .paragraph_title {
+        font-size: 26px;
+    }
+    .text, .list, .quote {
+        font-size: 18px;
+    }
+    .list_title {
+        font-size: 22px;
+    }
+    .quote {
+        padding: 15px 20px;
+    }
+    .burger_menu {
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    .text_section {
+        padding: 0 15px;
+    }
+    .main_title {
+        font-size: 26px;
+        margin-bottom: 16px;
+    }
+    .paragraph_title {
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+    .text, .list, .quote {
+        font-size: 16px;
+    }
+    .list_title {
+        font-size: 20px;
+    }
+    .quote {
+        padding: 10px 15px;
+        margin: 15px 0;
+    }
+    .list {
+        padding-left: 18px;
+    }
+}
+
+@media (max-width: 340px) {
+    .main_title {
+        font-size: 22px;
+    }
+    .paragraph_title {
+        font-size: 20px;
+    }
+    .text, .list, .quote {
+        font-size: 15px;
+    }
+    .article_wrapper {
+        padding: 15px 0;
+    }
+    .text_section {
+        padding: 0 10px;
+    }
+}
